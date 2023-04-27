@@ -7,7 +7,7 @@ from cats.views import AchievementViewSet, CatViewSet, UserViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'cats', CatViewSet)
+router.register(r'cats', CatViewSet, basename='name')
 router.register(r'users', UserViewSet)
 router.register(r'achievements', AchievementViewSet)
 
